@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body{
+    background-image: url('../img/wall3.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    width:100%;
+    display: flex;
+    align-items: center;
+    background: black;
+}
+
+ul{
+    display:inline;
+    font-family:'Bebas Neue';
+    color:orangered;
+    font-weight:bold;
+    font-size:30px;
+}
+
+li{
+    display:inline;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.espacio {
+    height:70px
+}
+
+.productTitle{
+    color:orangered;
+    font-family:'Montserrat';
+}
+
+p{
+    color:aliceblue;
+    font-family:'Montserrat'
+}
+
+
+
+img {
+    border-radius: 8%;
+    height: auto;
+    max-width: 100%;
+}
+
+.productImages{
+    height: auto;
+    max-width: 100%;
+}
+
+a{
+    text-decoration:none;
+    color:orangered
+}
+
+h1{
+    color:aliceblue;
+    font-family:'Montserrat';
+}
+
+h2{
+    color:aliceblue;
+    font-family:'Montserrat';
+}
+
+.titleStyle{
+    color:aliceblue;
+    font-family:'Montserrat';
+    padding-left:200px;
+}
+
+.questionStyle{
+    color:aliceblue;
+    font-family:'Montserrat';
+    padding-left:580px;
+}
+
+h3{
+    color:aliceblue;
+    font-family:'Montserrat';
+}
+
+h4{
+    font-family: 'Anton';
+    color:rgb(0, 0, 0)
+}
+
+.bar{
+    padding-left:500px;
+
+}
+
+footer{
+    background-color: orangered;
+}
+
+.principal-grid {
+    display: grid;
+    grid-template-columns:0.5fr 0.5fr;
+    grid-template-rows: 0.5fr;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.informacion-grid {
+    display: grid;
+    grid-template-columns:0.5fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+/*------ mobile ------*/
+@media screen and (max-width:768px){
+
+h1{
+    color:aliceblue;
+    font-family:'Montserrat';
+    font-size: 15px;
+}
+    
+h2{
+    color:aliceblue;
+    font-family:'Montserrat';
+}
+
+p{
+    color:aliceblue;
+    font-family:'Montserrat';
+    font-size: 15px;
+}
+
+h3{
+    color:aliceblue;
+    font-family:'Montserrat';
+}
+    
+h4{
+    font-family: 'Anton';
+    color:rgb(0, 0, 0)
+}
+
+ul{
+    display:table-cell;
+    vertical-align: middle;
+    font-family:'Bebas Neue';
+    color:orangered;
+    font-weight:bold;
+    font-size:30px;
+}
+
+.titleStyle{
+    color:aliceblue;
+    font-family:'Montserrat';
+    text-align: center;
+    padding-left: 10px;
+}
+
+.productImages{
+    height: auto;
+    max-width: 100%;
+}
+
+.principal-grid {
+    display: grid;
+    grid-template-columns:0.5fr 0.5fr;
+    grid-template-rows: 0.5fr;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.informacion-grid {
+    display: grid;
+    grid-template-columns:1.5fr 1.5fr;
+    grid-template-rows: 1.5fr 1.5fr;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 3rem;
+    font-size: 15px;
+}
+
+iframe{
+    width: 80%;
+    height: auto;
+}
+
+.questionStyle{
+    color:aliceblue;
+    font-family:'Montserrat';
+    font-size: 15px;
+    text-align: center;
+    padding-left: 20px;
+}
+
+header {
+    display: table-cell; 
+    vertical-align: middle;
+    padding-left: 20px;
+}
+}
