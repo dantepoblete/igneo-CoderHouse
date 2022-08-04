@@ -121,6 +121,20 @@ footer{
     padding-bottom: 2rem;
 }
 
+.transition {
+    transition: transform .2s;;
+}
+.transition:hover{
+    transform:scale(1.2);
+}
+
+.transitionTitle {
+    transition: transform .2s;;
+}
+.transitionTitle:hover{
+    animation: dissapear 2s linear 2.5s;;
+}
+
 /*------ mobile ------*/
 @media screen and (max-width:768px){
 
