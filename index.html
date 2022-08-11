@@ -9,69 +9,115 @@
     <title>Igneo Deco</title>
 </head>
 <header>
-    <div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <div>
         <a href="index.html"><img src="./img/logo.jpg" alt="Logo Igneo"></a>
-    </div>
-    <div class="navbar">
-        <div class="navbar-inner">
-            <ul class="nav">
-                <li><a href="./products.html">Nuestros Productos</a></li>
-                <li><a href="https://listado.mercadolibre.com.ar/_CustId_534560519">Tienda</a></li>
-                <li class="dropdown">
-                    <a class="btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">Nuestras Redes</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="https://www.instagram.com/igneodeco/">Instagram</a></li>
-                        <li><a href="https://www.facebook.com/igneodeco/">Facebook</a></li>
-                    </ul>
-                </li>
+      </div>
+      <button class="navbar-toggler custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="./products.html">Nuestros Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://listado.mercadolibre.com.ar/_CustId_534560519">Tienda</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nuestras Redes</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="https://www.instagram.com/igneodeco/">Instagram</a></li>
+              <li><a class="dropdown-item" href="https://www.facebook.com/igneodeco/">Facebook</a></li>
             </ul>
-        </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href=#workquestion>Trabajá con nosotros</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
 </header>
 <body>
-    <div class="principal-grid">
-        <img src="./img/igneologo.png" alt="Logo Igneo">
-        <img src="./img/product.png"  alt="Muestra de Productos">
-    </div>
-    <div  class="transition">
-        <h2>
-            <p class="titleStyle">Somos Ígneo, una joven empresa de decoración para el hogar. Contamos con los diseños más innovadores que le darán calidez a tus encuentros.</p> 
-            <p class="titleStyle">Consultá por nuestros quemadores a base de bioetanol y hacé de tus ambientes un lugar mejor.</p>
-        </h2>
-    </div>
-    <div class="informacion-grid">
-        <div  class="transition">
-            <h3>
-                <p>Este invierno lo disfrutás al calor de nuestros fogoneros.</p>
-                <p>Nuestros dos modelos de fogoneros son productos simples,</p> 
-                <p>que no solo van a decorar cada rincón de tu hogar,</p>
-                <p>sino que lo van a llenar de la calidez que necesita en estos días fríos</p>
-            </h3>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="./img/igneologo.png" alt="Logo Igneo">
+            </div>
+            <div class="col">
+                <img src="./img/product.png"  alt="Muestra de Productos">
+            </div>
         </div>
-        <div>    
-            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Figneodeco%2Fvideos%2F380916766490514%2F&show_text=false&width=476&t=0" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+        <div class="row top-buffer">
+            <div  class="transition">
+                <h3>
+                    <p class="text-center">Somos Ígneo, una joven empresa de decoración para el hogar. Contamos con los diseños más innovadores que le darán calidez a tus encuentros.</p> 
+                    <p class="text-center">Consultá por nuestros quemadores a base de bioetanol y hacé de tus ambientes un lugar mejor.</p>
+                </h3>
+            </div>
         </div>
-        <div>
-            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Figneodeco%2Fvideos%2F437936977564445%2F&show_text=false&width=476&t=0" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+        <div class="row top-buffer">
+            <div class="col">
+                <img src="./img/banner.png" alt="Eslogan">
+            </div>
         </div>
-        <div  class="transition">
-            <h3>
-                <p>Nuestros fogoneros de mesa llenarán de calidez tu casa y transmitirán a las personas que estén a su alrededor, </p>
-                <p>esa linda sensación y energía, como la que uno siente alrededor de un fogón</p>
-            </h3>
+        <div class="row top-buffer">
+            <div id="carousel" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/1.jpg" class="img-fluid" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Llená de energía tu hogar</h5>
+                      <p>Esa linda sensación y energía, como la que uno siente alrededor de un fogón.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/2.jpg" class="img-fluid" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Dale calidez a tus ambientes</h5>
+                      <p>Nuestros fogoneros de mesa llenarán de calidez tu casa y lo transmitirán a las personas que estén a su alrededor.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/3.jpg" class="img-fluid" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Innová cada rincón</h5>
+                      <p>Marcá la diferencia y dale un toque moderno a tu hogar.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </div>
+        <div class="row top-buffer" id="workquestion">
+            <h2><p class="text-center productTitle">¿Te interesa revender nuestros productos en tu negocio?</p></h2>
+            <h3><p class="text-center productTitle">¡Contáctanos!</p></h3>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="form-group col-md-4 align-center">
+            <form>      
+              <input name="name" type="text" class="feedback-input" placeholder="Nombre y Apellido" />   
+              <input name="email" type="text" class="feedback-input" placeholder="Email" />
+              <input name="email" type="text" class="feedback-input" placeholder="Teléfono" />
+              <textarea name="text" class="feedback-input" placeholder="Motivo"></textarea>
+              <input type="submit" value="Enviar"/>
+            </form>
+          </div>  
+        </div>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p>&copy; 2020 Igneo Decó</p>
+            <p>&phone;221-678-2528</p>
+            <p>&#128231;ventas@igneo.com.ar</p>
+        </footer>
     </div>
-    <img src="./img/banner.png" class=productImages alt="Eslogan">
-    <div class="questionStyle">
-        <h2><p>¿Te interesa revender nuestros productos en tu negocio?</p></h2>
-    </div>
-    <!--Acá va un formulario-->
-
-    <footer>
-        <h4>Contacto:</h4>
-        <p>Teléfono: 221-678-2528</p>
-        <p>Correo Electónico: ventas@igneo.com.ar</p>
-    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
