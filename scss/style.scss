@@ -2,8 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
+/*VARS*/
+$color:orangered;
+$defaultFont:'Montserrat';
+$backgoundImg:'../img/wall3.jpg';
+
 body{
-    background-image: url('../img/wall3.jpg');
+    background-image: url($backgoundImg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -19,7 +24,7 @@ header {
 ul{
     display:inline;
     font-family:'Bebas Neue';
-    color:orangered;
+    color:$color;
     font-weight:bold;
     font-size:30px;
 }
@@ -31,7 +36,7 @@ li{
 }
 
 .productTitle{
-    font-family:'Montserrat';
+    font-family:$defaultFont;
     color:aliceblue;
     font-weight:bold;
 }
@@ -45,7 +50,7 @@ li{
 }
 
 nav .navbar-nav li a{
-    color: orangered !important;
+    color: $color !important;
     }
 
 p{
@@ -73,21 +78,21 @@ img {
 
 a{
     text-decoration:none;
-    color:orangered
+    color:$color
 }
 
 h1{
     color:aliceblue;
-    font-family:'Montserrat';
+    font-family:$defaultFont;
 }
 
 h2{
     color:aliceblue;
-    font-family:'Montserrat';
+    font-family:$defaultFont;
 }
 
 h5{
-    color:orangered;
+    color:$color;
     font-family:'Montserrat ExtraBold';
 }
 .titleStyle{
@@ -97,7 +102,7 @@ h5{
 
 .questionStyle{
     color:aliceblue;
-    font-family:'Montserrat';
+    font-family:$defaultFont;
     padding-left:580px;
 }
 
@@ -119,14 +124,14 @@ h4{
 }
 
 .feedback-input {
-    color:orange;
-    font-family: 'Montserrat';
+    color:$color;
+    font-family: $defaultFont;
     font-weight:bold;
     font-size: 18px;
     border-radius: 5px;
     line-height: 22px;
     background-color: transparent;
-    border:2px solid orangered;
+    border:2px solid $color;
     transition: all 0.3s;
     padding: 13px;
     margin-bottom: 15px;
@@ -147,9 +152,9 @@ h4{
   }
   
   [type="submit"] {
-    font-family: 'Montserrat';
+    font-family: $defaultFont;
     width: 100%;
-    background:orangered;
+    background:$color;
     border-radius:5px;
     border:0;
     cursor:pointer;
@@ -172,24 +177,24 @@ h4{
 
 h1{
     color:aliceblue;
-    font-family:'Montserrat';
+    font-family:$defaultFont;
     font-size: 15px;
 }
     
 h2{
     color:aliceblue;
-    font-family:'Montserrat';
+    font-family:$defaultFont;
 }
 
 p{
     color:aliceblue;
-    font-family:'Montserrat';
+    font-family:$defaultFont;
     font-size: 15px;
 }
 
 h3{
     color:aliceblue;
-    font-family:'Montserrat';
+    font-family:$defaultFont;
 }
     
 h4{
@@ -201,7 +206,7 @@ ul{
     display:table-cell;
     vertical-align: middle;
     font-family:'Bebas Neue';
-    color:orangered;
+    color:$color;
     font-weight:bold;
     font-size:30px;
 }
