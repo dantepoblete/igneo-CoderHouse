@@ -169,24 +169,6 @@ h4{
 
 /*------ mobile ------*/
 @media screen and (max-width:768px){
-
-h1{
-    @extend .properties;
-    font-size: 15px;
-}
-    
-h2{
-    @extend .properties
-}
-
-p{
-    @extend .properties;
-    font-size: 15px;
-}
-
-h3{
-    @extend .properties
-}
     
 h4{
     @include colorAndFont(rgb(0, 0, 0),map-get($fuentes, fuente4))
