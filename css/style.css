@@ -108,7 +108,7 @@ h3{
 
 h4{
     font-family: 'Anton';
-    color:rgb(0, 0, 0)
+    color:orangered
 }
 
 .transition {
@@ -116,6 +116,14 @@ h4{
 }
 .transition:hover{
     transform:scale(1.1);
+}
+
+.dropdown-item{
+    background-color: black;
+}
+
+.dropdown-menu{
+    background-color: black;
 }
 
 .feedback-input {
@@ -194,7 +202,7 @@ h3{
     
 h4{
     font-family: 'Anton';
-    color:rgb(0, 0, 0)
+    color:orangered
 }
 
 ul{
