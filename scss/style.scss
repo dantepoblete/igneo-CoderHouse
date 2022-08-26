@@ -110,7 +110,7 @@ h3{
 }
 
 h4{
-    @include colorAndFont(rgb(0, 0, 0),map-get($fuentes, fuente4))
+    @include colorAndFont($color,map-get($fuentes, fuente4))
 }
 
 .transition {
@@ -119,6 +119,15 @@ h4{
 .transition:hover{
     transform:scale(1.1);
 }
+
+.dropdown-item{
+    background-color: black;
+}
+
+.dropdown-menu{
+    background-color: black;
+}
+
 
 .feedback-input {
     @include colorAndFont($color, $defaultFont);
@@ -171,7 +180,7 @@ h4{
 @media screen and (max-width:768px){
     
 h4{
-    @include colorAndFont(rgb(0, 0, 0),map-get($fuentes, fuente4))
+    @include colorAndFont($color,map-get($fuentes, fuente4))
 }
 
 ul{
