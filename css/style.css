@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: black; }
+
+/*VARS*/
+body {
+  background-image: url("../img/wall3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+
+ul {
+  color: orangered;
+  font-family: "Bebas Neue";
+  display: inline;
+  font-weight: bold;
+  font-size: 30px; }
+
+li {
+  display: inline;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.productTitle {
+  color: aliceblue;
+  font-family: "Montserrat";
+  font-weight: bold; }
+
+.pro-img-details {
+  margin-left: -15px; }
+
+.navbar-light {
+  background-color: black !important; }
+
+nav .navbar-nav li a {
+  color: orangered !important; }
+
+p {
+  color: aliceblue;
+  font-family: "Montserrat Regular"; }
+
+.top-buffer {
+  margin-top: 30px; }
+
+.streched {
+  width: 75%; }
+
+img {
+  width: 100%;
+  max-width: 100%; }
+
+.productImg {
+  width: 75%; }
+
+a {
+  text-decoration: none;
+  color: orangered; }
+
+.properties, h1, h2, .titleStyle {
+  color: aliceblue;
+  font-family: "Montserrat"; }
+
+h5 {
+  color: orangered;
+  font-family: "Montserrat ExtraBold"; }
+
+.questionStyle {
+  color: aliceblue;
+  font-family: "Montserrat";
+  padding-left: 580px; }
+
+h3 {
+  color: aliceblue;
+  font-family: "Montserrat Regular"; }
+
+h4 {
+  color: orangered;
+  font-family: "Anton"; }
+
+.transition {
+  transition: transform .2s; }
+
+.transition:hover {
+  transform: scale(1.1); }
+
+.dropdown-item {
+  background-color: black; }
+
+.dropdown-menu {
+  background-color: black; }
+
+.feedback-input {
+  color: orangered;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid orangered;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0; }
+
+.feedback-input:focus {
+  border: 2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical; }
+
+[type="submit"] {
+  color: white;
+  font-family: "Montserrat";
+  width: 100%;
+  background: orangered;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700; }
+
+.custom-button {
+  background: orangered; }
+
+.galleryType {
+  border-radius: 8%; }
+
+/*------ mobile ------*/
+@media screen and (max-width: 768px) {
+  h4 {
+    color: orangered;
+    font-family: "Anton"; }
+  ul {
+    color: orangered;
+    font-family: "Bebas Neue";
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 30px; }
+  header {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 20px; } }
