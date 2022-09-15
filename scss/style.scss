@@ -9,6 +9,13 @@ $color:orangered;
 $defaultFont:'Montserrat';
 $backgoundImg:'../img/wall3.jpg';
 
+$fuentes: (fuente1:'Bebas Neue',fuente2:'Montserrat Regular', fuente3:'Montserrat ExtraBold', fuente4:'Anton');
+
+@mixin colorAndFont($fontColor,$fontFamily){
+    color:$fontColor;
+    font-family:$fontFamily
+}
+
 body{
     background-image: url($backgoundImg);
     background-repeat: no-repeat;
@@ -17,9 +24,8 @@ body{
 }
 
 ul{
+    @include colorAndFont($color,map-get($fuentes, fuente1));
     display:inline;
-    font-family:'Bebas Neue';
-    color:$color;
     font-weight:bold;
     font-size:30px;
 }
@@ -31,8 +37,7 @@ li{
 }
 
 .productTitle{
-    font-family:$defaultFont;
-    color:aliceblue;
+    @include colorAndFont(aliceblue,$defaultFont);
     font-weight:bold;
 }
 
@@ -49,8 +54,7 @@ nav .navbar-nav li a{
     }
 
 p{
-    color:aliceblue;
-    font-family:'Montserrat Regular'
+    @include colorAndFont(aliceblue,map-get($fuentes, fuente2))
 }
 
 .top-buffer {
@@ -76,39 +80,37 @@ a{
     color:$color
 }
 
-h1{
+.properties{
     color:aliceblue;
     font-family:$defaultFont;
+}
+
+h1{
+    @extend .properties
 }
 
 h2{
-    color:aliceblue;
-    font-family:$defaultFont;
+    @extend .properties
 }
 
 h5{
-    color:$color;
-    font-family:'Montserrat ExtraBold';
+    @include colorAndFont($color,map-get($fuentes, fuente3));
 }
 .titleStyle{
-    color:aliceblue;
-    font-family:'Montserrat';
+    @extend .properties
 }
 
 .questionStyle{
-    color:aliceblue;
-    font-family:$defaultFont;
+    @include colorAndFont(aliceblue,$defaultFont );
     padding-left:580px;
 }
 
 h3{
-    color:aliceblue;
-    font-family:'Montserrat Regular';
+    @include colorAndFont(aliceblue,map-get($fuentes, fuente2))
 }
 
 h4{
-    font-family: 'Anton';
-    color:rgb(0, 0, 0)
+    @include colorAndFont($color,map-get($fuentes, fuente4))
 }
 
 .transition {
@@ -118,9 +120,17 @@ h4{
     transform:scale(1.1);
 }
 
+.dropdown-item{
+    background-color: black;
+}
+
+.dropdown-menu{
+    background-color: black;
+}
+
+
 .feedback-input {
-    color:$color;
-    font-family: $defaultFont;
+    @include colorAndFont($color, $defaultFont);
     font-weight:bold;
     font-size: 18px;
     border-radius: 5px;
@@ -147,13 +157,12 @@ h4{
   }
   
   [type="submit"] {
-    font-family: $defaultFont;
+    @include colorAndFont(white,$defaultFont);
     width: 100%;
     background:$color;
     border-radius:5px;
     border:0;
     cursor:pointer;
-    color:white;
     font-size:24px;
     padding-top:10px;
     padding-bottom:10px;
@@ -166,42 +175,22 @@ h4{
     background:orangered;
   }
 
+  .galleryType{
+    border-radius: 8%;
+  }
+
 
 /*------ mobile ------*/
 @media screen and (max-width:768px){
-
-h1{
-    color:aliceblue;
-    font-family:$defaultFont;
-    font-size: 15px;
-}
-    
-h2{
-    color:aliceblue;
-    font-family:$defaultFont;
-}
-
-p{
-    color:aliceblue;
-    font-family:$defaultFont;
-    font-size: 15px;
-}
-
-h3{
-    color:aliceblue;
-    font-family:$defaultFont;
-}
     
 h4{
-    font-family: 'Anton';
-    color:rgb(0, 0, 0)
+    @include colorAndFont($color,map-get($fuentes, fuente4))
 }
 
 ul{
+    @include colorAndFont($color, map-get($fuentes, fuente1));
     display:table-cell;
     vertical-align: middle;
-    font-family:'Bebas Neue';
-    color:$color;
     font-weight:bold;
     font-size:30px;
 }

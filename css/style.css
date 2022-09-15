@@ -1,22 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
-body {
-  background-image: url("../img/wall3.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover; }
-
 header {
   width: 100%;
   display: flex;
   align-items: center;
   background: black; }
 
+/*VARS*/
+body {
+  background-image: url("../img/wall3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+
 ul {
-  display: inline;
-  font-family: 'Bebas Neue';
   color: orangered;
+  font-family: "Bebas Neue";
+  display: inline;
   font-weight: bold;
   font-size: 30px; }
 
@@ -26,8 +27,8 @@ li {
   padding-right: 20px; }
 
 .productTitle {
-  font-family: 'Montserrat';
   color: aliceblue;
+  font-family: "Montserrat";
   font-weight: bold; }
 
 .pro-img-details {
@@ -41,7 +42,7 @@ nav .navbar-nav li a {
 
 p {
   color: aliceblue;
-  font-family: 'Montserrat Regular'; }
+  font-family: "Montserrat Regular"; }
 
 .top-buffer {
   margin-top: 30px; }
@@ -60,34 +61,26 @@ a {
   text-decoration: none;
   color: orangered; }
 
-h1 {
+.properties, h1, h2, .titleStyle {
   color: aliceblue;
-  font-family: 'Montserrat'; }
-
-h2 {
-  color: aliceblue;
-  font-family: 'Montserrat'; }
+  font-family: "Montserrat"; }
 
 h5 {
   color: orangered;
-  font-family: 'Montserrat ExtraBold'; }
-
-.titleStyle {
-  color: aliceblue;
-  font-family: 'Montserrat'; }
+  font-family: "Montserrat ExtraBold"; }
 
 .questionStyle {
   color: aliceblue;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   padding-left: 580px; }
 
 h3 {
   color: aliceblue;
-  font-family: 'Montserrat Regular'; }
+  font-family: "Montserrat Regular"; }
 
 h4 {
-  font-family: 'Anton';
-  color: black; }
+  color: orangered;
+  font-family: "Anton"; }
 
 .transition {
   transition: transform .2s; }
@@ -95,9 +88,15 @@ h4 {
 .transition:hover {
   transform: scale(1.1); }
 
+.dropdown-item {
+  background-color: black; }
+
+.dropdown-menu {
+  background-color: black; }
+
 .feedback-input {
-  color: orange;
-  font-family: 'Montserrat';
+  color: orangered;
+  font-family: "Montserrat";
   font-weight: bold;
   font-size: 18px;
   border-radius: 5px;
@@ -120,13 +119,13 @@ textarea {
   resize: vertical; }
 
 [type="submit"] {
-  font-family: 'Montserrat';
+  color: white;
+  font-family: "Montserrat";
   width: 100%;
   background: orangered;
   border-radius: 5px;
   border: 0;
   cursor: pointer;
-  color: white;
   font-size: 24px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -137,30 +136,19 @@ textarea {
 .custom-button {
   background: orangered; }
 
+.galleryType {
+  border-radius: 8%; }
+
 /*------ mobile ------*/
 @media screen and (max-width: 768px) {
-  h1 {
-    color: aliceblue;
-    font-family: 'Montserrat';
-    font-size: 15px; }
-  h2 {
-    color: aliceblue;
-    font-family: 'Montserrat'; }
-  p {
-    color: aliceblue;
-    font-family: 'Montserrat';
-    font-size: 15px; }
-  h3 {
-    color: aliceblue;
-    font-family: 'Montserrat'; }
   h4 {
-    font-family: 'Anton';
-    color: black; }
+    color: orangered;
+    font-family: "Anton"; }
   ul {
+    color: orangered;
+    font-family: "Bebas Neue";
     display: table-cell;
     vertical-align: middle;
-    font-family: 'Bebas Neue';
-    color: orangered;
     font-weight: bold;
     font-size: 30px; }
   header {
